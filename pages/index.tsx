@@ -20,7 +20,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      userCount: parseInt(Math.random()*100),
+      userCount: Math.random()*100,
       revalidate: 5
     }
   }
